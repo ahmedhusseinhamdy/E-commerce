@@ -1,11 +1,11 @@
 <nav class="bg-gray-100 sticky top-0 end-0 start-0 border-gray-200 dark:bg-gray-900 z-50">
     <div class="max-w-[95%] mx-auto flex flex-wrap items-center justify-between py-2 px-3">
       <a  class="flex items-center space-x-3 rtl:space-x-reverse md:w-[10%]">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap">
             <img src="./images/freshcart-logo.svg" alt="">
           </span>
       </a>
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <span aria-hidden="true"  fill="none" viewBox="0 0 17 14">
             <i class="fa-solid fa-sliders"></i>
@@ -16,25 +16,25 @@
         <ul class="font-medium p-4 mt-3 flex flex-col md:flex-row md:mt-0 rounded-lg">
          
           <li>
-            <a class="block py-2 px-3 rounded-md" routerLink="home" routerLinkActive="bg-green-400 text-white">Home</a>
+            <a class="block py-2 px-3 rounded-md text-gray-700 dark:text-white" routerLink="home" routerLinkActive="bg-green-400 text-white">Home</a>
           </li>
           <li>
-            <a class="block py-2 px-3 rounded-md" routerLink="products" routerLinkActive="bg-green-400 text-white">Products</a>
+            <a class="block py-2 px-3 rounded-md text-gray-700 dark:text-white" routerLink="products" routerLinkActive="bg-green-400 text-white">Products</a>
           </li>
           <li>
-            <a class="block py-2 px-3 rounded-md" routerLink="categories" routerLinkActive="bg-green-400 text-white">Categories</a>
+            <a class="block py-2 px-3 rounded-md text-gray-700 dark:text-white" routerLink="categories" routerLinkActive="bg-green-400 text-white">Categories</a>
           </li>
           <li>
-            <a class="block py-2 px-3 rounded-md" routerLink="brands" routerLinkActive="bg-green-400 text-white">Brands</a>
+            <a class="block py-2 px-3 rounded-md text-gray-700 dark:text-white" routerLink="brands" routerLinkActive="bg-green-400 text-white">Brands</a>
           </li>
           <li>
-            <a class="block py-2 px-3 rounded-md" routerLink="cart" routerLinkActive="bg-green-400 text-white">Cart</a>
+            <a class="block py-2 px-3 rounded-md text-gray-700 dark:text-white" routerLink="cart" routerLinkActive="bg-green-400 text-white">Cart</a>
           </li>
           <li>
-            <a class="block py-2 px-3 rounded-md" routerLink="wishlist" routerLinkActive="bg-green-400 text-white">wishlist</a>
+            <a class="block py-2 px-3 rounded-md text-gray-700 dark:text-white" routerLink="wishlist" routerLinkActive="bg-green-400 text-white">wishlist</a>
           </li>
           <li>
-            <a class="block py-2 px-3 rounded-md" routerLink="allorders" routerLinkActive="bg-green-400 text-white">Allorders</a>
+            <a class="block py-2 px-3 rounded-md text-gray-700 dark:text-white" routerLink="allorders" routerLinkActive="bg-green-400 text-white">Allorders</a>
           </li>
         </ul>
       }
@@ -68,7 +68,7 @@
           </div>
           <li class="flex justify-center items-center">
             @if (check == false) {
-              <a class="block py-2 px-3 rounded-full" routerLink="login" routerLinkActive="bg-green-400 text-white">Login</a>
+              <a class="block py-2 px-3 rounded-full text-gray-700 dark:text-white" routerLink="login" routerLinkActive="bg-green-400 text-white">Login</a>
             }@else if(check==true) {
 
               <div routerLink="userProfile" class="border-emerald-400 rounded-xl border-2 flex flex-col justify-center items-center cursor-pointer">
@@ -81,13 +81,13 @@
           </li>
           @if (loged == false) {
             <li>
-              <a class="block py-2 px-3 rounded-full" routerLink="register" routerLinkActive="bg-green-400 text-white">Register</a>
+              <a class="block py-2 px-3 rounded-full text-gray-700 dark:text-white" routerLink="register" routerLinkActive="bg-green-400 text-white">Register</a>
             </li>
           }
          
           @if (loged == true) {
             <li>
-              <a (click)="logOut()" class="block py-2 px-3 rounded-full cursor-pointer">Log out </a>
+              <a (click)="logOut()" class="block py-2 px-3 rounded-full cursor-pointer text-gray-700 dark:text-white">Log out </a>
             </li>
           }
           
@@ -97,4 +97,3 @@
      
     </div>
   </nav>
-  

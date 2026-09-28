@@ -4,7 +4,7 @@
    @if (resText !='') { <h1 class="bg-red-600 text-xl text-center text-white rounded-xl my-5 p-6">{{resText}}</h1>}
     <form [formGroup]="registerform" (ngSubmit)="register()">
         <label for="default-input"
-            class="my-4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+            class="my-4 block mb-2 text-sm font-bold text-emerald-800">Name</label>
         <input formControlName="name" type="text" id="name"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" [class]="{
                 'invalid':registerform.get('name')?.errors && registerform.get('name')?.touched,
@@ -37,7 +37,7 @@
 
         <div class="my-5">
             <label for="default-input"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                class="block mb-2 text-sm font-bold text-emerald-800">Email</label>
             <input formControlName="email" type="text" id="email"
                 class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" [class]="{
                     'invalid':registerform.get('email')?.errors && (registerform.get('email')?.touched || registerform.get('email')?.dirty),
@@ -70,7 +70,7 @@
 
         <div class="my-5">
             <label for="default-input"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">password</label>
+                class="block mb-2 text-sm font-bold text-emerald-800">password</label>
             <input formControlName="password" type="password" id="password"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" [class]="{
                     'invalid':registerform.get('password')?.errors && registerform.get('password')?.touched,
@@ -102,7 +102,7 @@
 
         <div class="my-5">
             <label for="default-input"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">rePassword</label>
+                class="block mb-2 text-sm font-bold text-emerald-800">rePassword</label>
             <input formControlName="rePassword" type="password" id="rePassword" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" [class]="{
                 'invalid':registerform.errors && ( registerform.get('rePassword')?.touched || registerform.get('rePassword')?.dirty),
                 'valid': !registerform.errors && (registerform.get('rePassword')?.touched || registerform.get('rePassword')?.dirty)
@@ -136,7 +136,7 @@
 
         <div class="my-5">
             <label for="default-input"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">phone</label>
+                class="block mb-2 text-sm font-bold text-emerald-800">phone</label>
             <input formControlName="phone" type="tel" id="phone"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" [class]="{
                     'invalid':registerform.get('phone')?.errors && registerform.get('phone')?.touched,
