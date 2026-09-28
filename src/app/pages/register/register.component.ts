@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
-  resText!: string;
+  resText: string = '';
   loading: boolean = false;
   private readonly _AuthService = inject(AuthService);
   private readonly _Router = inject(Router);

@@ -1,6 +1,6 @@
 import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { AuthService } from '../../core/services/authentication/auth.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { jwtDecode } from "jwt-decode";
 import { ToastrService } from 'ngx-toastr';
@@ -8,7 +8,7 @@ import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
@@ -138,4 +138,3 @@ export class LoginComponent {
 
 
 }
-
